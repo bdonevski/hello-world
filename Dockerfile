@@ -1,8 +1,8 @@
 # Use a container with Go pre-installed
-FROM quay.io/practicalopenshift/hello-world
+FROM golang:alpine
 
 # Copy our source file into the container
-COPY src/hello-world.go /go/hello-world.go
+ADD src/hello-world.go /go/hello-world.go
 
 # Set the default environment variables
 ENV MESSAGE "Hello from custom image by Bojan from his repository"
