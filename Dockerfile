@@ -5,7 +5,7 @@ FROM quay.io/practicalopenshift/hello-world
 COPY src/hello-world.go /go/hello-world.go
 
 # Set the default environment variables
-ENV MESSAGE "Hello from custom image by Bojan"
+ENV MESSAGE "Hello from custom image by Bojan from his repository"
 ENV HOME /go
 
 # Set permissions to the /go folder (for OpenShift)
